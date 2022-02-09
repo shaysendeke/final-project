@@ -1,9 +1,9 @@
 <h2>Introduction</h2>
-Simple setup for express as backend and react as frontend
-
+my final project at my 1000 hour bootcamp
 
 <h2>Project structure</h2>
 <ul>
+<li>a web app that delivers an online option to buy tickets to NBA games</li>
 <li>server resides under server directory</li>
 <li>react app reside under server directory inside client directory which created using create-react-app</li>
 </li>
