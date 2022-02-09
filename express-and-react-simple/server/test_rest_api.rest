@@ -1,0 +1,22 @@
+GET http://localhost:5000/api
+
+### 
+POST http://localhost:5000/contacts
+Content-Type: application/json
+
+{
+"name" : "moshe",
+"lastName": "cohen",
+"email": "moshe@gmail.com"
+}
+###
+
+POST http://localhost:5000/purchases
+Content-Type: application/json
+
+{
+    "email": "moshelevy@gmail.com",
+"fisrtName": "moshe",
+"lastName": "levy",
+"price": "2188"
+}
