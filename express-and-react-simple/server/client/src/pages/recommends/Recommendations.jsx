@@ -10,7 +10,7 @@ export default function Recommendations() {
       <p>WE WOULD LOVE TO SEE YOUR FACE AMONG THEM</p>
       <hr></hr>
       </div>
-      <div>
+      <div className="recos">
         <section className="recommend">
           <h1> DAVID ALLEN</h1>
           <h3>
@@ -62,6 +62,7 @@ export default function Recommendations() {
           </h3>
           <hr></hr>
         </section>
+        {/* <img src="https://cdn.nba.com/manage/2021/08/Web_Schedule_Announcement_Covers16x9.jpg" alt="" /> */}
         <section className="recommend">
           <h1>J. JONAH JAMESON</h1>
           <h3>

@@ -3,6 +3,7 @@ import * as NBAIcons from 'react-nba-logos';
 import { Redirect } from 'react-router-dom/cjs/react-router-dom.min';
 import { useState } from 'react/cjs/react.development';
 import AllLogos from '../components/AllLogos';
+import "./tickets.css"
 
 
 
@@ -21,6 +22,7 @@ setPrice(e.target.name)
   
   return (
   <div>
+    <div className='tickets'>
         <h4>{selectedGame.title}</h4>
         <h6>{selectedGame.datetime_local}</h6>
         <h6>{selectedGame.venue.name}</h6>
@@ -29,12 +31,12 @@ setPrice(e.target.name)
         <button name={selectedGame.stats.highest_price} onClick={openForm}>COURT SIDE:{selectedGame.stats.highest_price} $</button><span> </span>
         <button name={selectedGame.stats.lowest_price} onClick={openForm}>HIGER COURTS:{selectedGame.stats.lowest_price} $</button><span> </span>
         <button name={selectedGame.stats.median_price} onClick={openForm}>MAIN LEVEL:{selectedGame.stats.median_price} $</button><span> </span>
+    </div>
         <br />
         <AllLogos></AllLogos>
-
-
-
-
+        {/* <img className='lebron' src="https://cdn.nba.com/manage/2021/11/GROUPSHOT-WHITE-SILVERPEG-1568x882.jpg" alt="" /> */}
   </div>
+
+
   )
 }

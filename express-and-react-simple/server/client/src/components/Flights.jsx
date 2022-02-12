@@ -25,9 +25,15 @@ useEffect(getData,[])
     <p><a href={hotel.link}>click to site</a></p>
     </div>)
   return(
+      <div>
+
+       <div>
+       <h2 className='cupon'> Our Customers Enjoy Our Special CuponCode With The Companies Above: <span><h1 className='cuponCode'>SENDEKING</h1></span></h2>
+   </div>
    <div className="flights">
        {elements}
-   </div>
+       </div>
+      </div>
   )
 }
 

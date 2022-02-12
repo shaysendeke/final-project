@@ -2,6 +2,7 @@ import { useState } from "react/cjs/react.development";
 import AllLogos from "../components/AllLogos";
 import axios from "axios";
 import Swal from 'sweetalert2'
+import "./contact.css";
 // import Swal from 'sweetalert2/dist/sweetalert2.js'
 
 // import 'sweetalert2/src/sweetalert2.scss'
@@ -48,7 +49,7 @@ function sweetalert(){
   <div>
       <h2> WE WOULD LIKE TO HEAR FROM YOU <br></br>
       PLEASE LEAVE YOUR MESSAGE HERE</h2>
-      <form 
+      <form className="form"
       onSubmit={(e) => {
         e.preventDefault();
         sendContact();
@@ -60,7 +61,7 @@ function sweetalert(){
           <input placeholder="Last Name" onChange={(e) => setLastName(e.target.value)}></input><br />
           <input type="email" placeholder="email"onChange={(e) => setEmail(e.target.value)}></input><br /><br />
           <textarea rows="25" cols="50" placeholder="message" onChange={(e) => setMessage(e.target.value)}/><br />
-          <input type="submit" disabled={!email || !firstName || !lastName || !message}/>
+          <input className="button" type="submit" disabled={!email || !firstName || !lastName || !message}/>
 
       </form>
       <AllLogos></AllLogos>

@@ -1,21 +1,49 @@
+* {
+    
+}
 .flights  img{
-    width: 100px;
-    height: 100px;
-    margin:auto
+    width: 90px;
+    height: 90px;
+    margin:auto;
+    text-align: center;
+    
 }
 
 .flights {
-text-align: center;
-display: grid;
-grid-template-columns: repeat(3, 30%);
-grid-gap: 10px;
-justify-content: space-evenly;
-padding: 10px;
+    background-image: url("https://t3.ftcdn.net/jpg/02/78/49/42/360_F_278494228_YUrhm4MO6gsXSDoJhQ1FAJnZnQsCztwO.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    grid-gap: 10px;
+    justify-content: space-evenly;
+    padding: 10px;
+    text-align: center;
 }
 
 .flightDiv{
     border: lightgrey solid 0.5px;
-    box-shadow: #C3D2BF 5px 5px;
+    /* box-shadow: #C3D2BF 5px 5px; */
 
 
 }
+.cupon {
+    text-align: center;
+}
+
+.cuponCode {
+    background-color: red;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-direction: reverse;  
+  }
+  
+  @keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:blue; left:200px; top:0px;}
+    50%   {background-color:red; right:200px; top:0px;}
+    75%   {background-color:blue; left:-200px; top:0px;}
+    100% {background-color:red; left:200px; top:0px;}
+  }
+  
