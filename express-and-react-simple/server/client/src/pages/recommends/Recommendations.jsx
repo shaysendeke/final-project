@@ -1,5 +1,4 @@
 import "./re.css";
-import Footer from "../../components/Footer";
 export default function Recommendations() {
   return (
     <div>

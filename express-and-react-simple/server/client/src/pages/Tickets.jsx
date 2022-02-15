@@ -1,5 +1,4 @@
 import React from 'react';
-import * as NBAIcons from 'react-nba-logos';
 import { Redirect } from 'react-router-dom/cjs/react-router-dom.min';
 import { useState } from 'react/cjs/react.development';
 import AllLogos from '../components/AllLogos';

@@ -1,6 +1,5 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
-import { Redirect } from "react-router-dom";
 import "./search.css";
 import {
   useHistory
@@ -9,7 +8,6 @@ export default function Search({ setSelectedGame}) {
   // const [games, setGames] = useState([]);
   const [search, setSearch] = useState("");
   const [games, setGames] = useState([]);
-  const [isRedirect, setIsRedirect] = useState(false)
   
   const clientId = " MjU0MDg2NTN8MTY0MjU5MDE1NC4xNTEwNjk5";
   const url3 = `https://api.seatgeek.com/2/events?taxonomies.name=nba&client_id=${clientId}&per_page=15&page=1`;

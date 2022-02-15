@@ -1,5 +1,4 @@
 import {React, useState} from "react";
-import * as NBAIcons from "react-nba-logos";
 import AllLogos from "../components/AllLogos";
 import axios from "axios";
 import Swal from 'sweetalert2'
@@ -16,7 +15,6 @@ export default function Purchase({ selectedGame, price }) {
     const [firstName, setFirstName]=useState()
     const [lastName, setLastName]=useState()
     const [email, setEmail]=useState()
-    const [disabled, setDisabled] = useState(true)
 
     function sendPurchase(){
       axios.post("/purchases", {
@@ -39,12 +37,6 @@ export default function Purchase({ selectedGame, price }) {
       location: selectedGame.venue.display_location,
       price: price
       }
-    function isDisabled(){
-        if(email > 0 && 
-        firstName > 0 
-        && lastName > 0)
-        {setDisabled(!disabled)}
-    }
 
     function sweetalert(){
       Swal.fire({
